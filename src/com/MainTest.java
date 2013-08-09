@@ -37,7 +37,6 @@ public class MainTest {
 class Student{
     private int age;
 
-
     public String name = "23";
 
     @Override
