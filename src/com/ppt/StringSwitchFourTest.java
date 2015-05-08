@@ -5,7 +5,7 @@ package com.ppt;
  * Date: 13-7-12
  * Time: 下午2:27
  */
-public class TEST {
+public class StringSwitchFourTest {
     public static void main(String[] args) {
         System.out.println("io".hashCode());
         String name = "b";

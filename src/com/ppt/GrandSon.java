@@ -5,7 +5,7 @@ package com.ppt;
  * Date: 13-7-12
  * Time: 下午3:47
  */
-public class GrandSon extends Father {
+public class GrandSon extends com.ppt.Father {
     @Override
     Object getValue() {
         return super.getValue();
