@@ -31,7 +31,8 @@ final class NumericValue implements Comparable<NumericValue> {
     private byte value;
     public  NumericValue (byte value) { this.value = value; }
     public  byte getValue() { return value; }
-    public  int compareTo( NumericValue that) { return this.value - that.value; }
+    @Override
+    public  int compareTo(NumericValue that) { return this.value - that.value; }
 }
 
 class Collections {
@@ -40,7 +41,9 @@ class Collections {
         A w = xi.next();
         while (xi.hasNext()) {
             A x = xi.next();
-            if (w.compareTo(x) < 0) w = x;
+            if (w.compareTo(x) < 0) {
+                w = x;
+            }
         }
         return w;
     }

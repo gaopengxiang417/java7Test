@@ -1,5 +1,7 @@
 package com;
 
+import java.util.HashMap;
+
 /**
  * User: wangchen.gpx
  * Date: 13-7-12
@@ -7,6 +9,11 @@ package com;
  */
 public class MainTest {
     public static void main(String[] args) throws InterruptedException {
+
+        HashMap<String, Boolean> hashMap = new HashMap<>();
+
+        System.out.println(hashMap != null ? hashMap.get("test") : false);
+
 
         while(true){
 

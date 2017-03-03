@@ -1,11 +1,11 @@
-package com.ppt;
+package ppt;
 
 /**
  * User: wangchen.gpx
  * Date: 13-7-12
  * Time: 下午3:47
  */
-public class GrandSon extends com.ppt.Father {
+public class GrandSon extends ppt.Father {
     @Override
     Object getValue() {
         return super.getValue();

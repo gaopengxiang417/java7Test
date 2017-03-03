@@ -1,4 +1,4 @@
-package com.ppt;
+package ppt;
 
 /**
  * User: wangchen.gpx

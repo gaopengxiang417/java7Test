@@ -25,7 +25,6 @@ public class GeneralTypeErasureTest {
 
         //说明泛型添加的信息对JVM是不可见的，所以无法保证在运行时刻出现类型转换的问题
 
-
         //下面说明这个问题
         try {
             ArrayList<String> reflectiveList = new ArrayList<>();
@@ -33,7 +32,8 @@ public class GeneralTypeErasureTest {
             Method add = reflectiveList.getClass().getMethod("add", Object.class);
             add.invoke(reflectiveList , 88);
             for (int i = 0, j = reflectiveList.size(); i < j; i++) {
-                System.out.println(reflectiveList.get(i)); //强制类型转化的时候出现异常,看下get方法的源码
+                //强制类型转化的时候出现异常,看下get方法的源码
+                System.out.println(reflectiveList.get(i));
             }
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             System.out.println(e);

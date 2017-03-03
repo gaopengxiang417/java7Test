@@ -13,15 +13,22 @@ public class GeneralSoluationThreeTest {
     public static void main(String[] args) {
 
         ArrayList<String> listOne = new ArrayList<>();
-        listOne.add("china"); // OK
-//        listOne.add(33);// ERROR
-        String str = listOne.get(0); //返回为String类型
+        // OK
+        listOne.add("china");
+        // ERROR
+//      listOne.add(33);
+        //返回为String类型
+        String str = listOne.get(0);
 
 
         ArrayList listTwo = new ArrayList<String>();
-        listTwo.add("china"); //OK
-        listTwo.add(43); //OK
-        listTwo.add(new Date()); //ok
-        Object obj = listTwo.get(0); //返回为Object
+        //OK
+        listTwo.add("china");
+        //OK
+        listTwo.add(43);
+        //ok
+        listTwo.add(new Date());
+        //返回为Object
+        Object obj = listTwo.get(0);
     }
 }

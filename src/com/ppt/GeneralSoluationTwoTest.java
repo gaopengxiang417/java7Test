@@ -1,4 +1,4 @@
-package com.ppt;
+package ppt;
 
 import java.util.ArrayList;
 
@@ -11,11 +11,12 @@ import java.util.ArrayList;
 public class GeneralSoluationTwoTest {
     public static void main(String[] args) {
         //几种写法
-        ArrayList beforeList = new ArrayList(); //JDK5之前的写法
-
-        ArrayList<String> jdk5List = new ArrayList<String>();//JDK5中的写法
-
-        ArrayList<String> jdk7List = new ArrayList<>();//JDK7中的写法
+        //JDK5之前的写法
+        ArrayList beforeList = new ArrayList();
+        //JDK5中的写法
+        ArrayList<String> jdk5List = new ArrayList<String>();
+        //JDK7中的写法
+        ArrayList<String> jdk7List = new ArrayList<>();
 
         ArrayList notExistList = new ArrayList<String>();
 
